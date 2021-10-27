@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1>Javascript Example</h1>
+
+
+<form>
+    <!-- <label>Select your one</label>
+    <select id="myList" onchange="myFunction()">
+        <option></option>
+        <option>Google Chrome</option>
+        <option>Safari</option>
+        <option>Internet Explorer</option>
+    </select> -->
+
+    <p>Your choice is: <input type="text" id="test" value="Hello"></p>
+    <button type = "button" onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+</form>
+
+<script>
+    
+ function myFunction() {
+//   var mylist = document.getElementById("myList");
+//   document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+
+  var testVal = document.getElementById("test");
+
+  document.getElementById("demo").innerHTML = testVal;
+}
+
+</script>
+
+<body>
+    
+</body>
+</html>
